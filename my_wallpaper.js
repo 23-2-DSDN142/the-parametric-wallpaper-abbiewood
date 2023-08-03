@@ -25,20 +25,20 @@ let outsidePetalSize = 30
 let petalX = 32 
 let petalY = 68
 
-let complexFlowerMode = false;
+let complexFlowerMode = true;
 
 let deepColourMode = true;
 
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH);
-  pWallpaper.resolution (FIT_TO_SCREEN);
+  pWallpaper.resolution (NINE_PORTRAIT);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 100;
   pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 50;
+  pWallpaper.grid_settings.row_offset  = 100;
 }
 
 function wallpaper_background() {
@@ -49,10 +49,11 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 
     
     strokeWeight(0.5); //line weight
-    stroke (0); // colour of the line
+    stroke ("#821931"); // colour of the line
 
     if(complexFlowerMode){
     //added petals
+    fill ("#9e1b42")
      circle (petalX,petalY-39, outsidePetalSize) //top left
      circle (petalX+ 37, petalY, outsidePetalSize) // bottom right
      circle (petalX, petalY + 1, outsidePetalSize) // bottom left
@@ -60,6 +61,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
     }
 
      //petal outline
+     fill (255)
      circle (outlineX, outlineY-20, outlineSize) //
      circle (outlineX-20 , outlineY , outlineSize)
      circle (outlineX+20, outlineY, outlineSize)
@@ -82,7 +84,9 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
     
 
       if(deepColourMode){
+
       //detail in centre of flower
+      fill ("#DB652D")
       circle (detailX - 2, detailY - 4, circleSize) 
       circle (detailX + 3, detailY - 3, circleSize)
       circle (detailX + 7, detailY, circleSize)
@@ -102,7 +106,27 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
       circle (detailX - 11, detailY - 2 , circleSize)
       circle (detailX - 7 , detailY - 4, circleSize)
 
-    
+       //top left cluster
+      circle (6, 7, 4)
+      circle (20, 10, 2)
+      circle (10, 20, 3)
+
+       //bottom left cluster
+      circle (20, 90, 3)
+      circle (8, 86, 4)
+      circle (10, 70, 2)
+
+      //top right cluster
+      circle (93, 20, 3)
+      circle (72, 10, 2)
+      circle (90, 8, 4)
+
+
+      //bottom right cluster
+      circle (87, 82, 4)
+      circle (92, 92, 2)
+      circle (75, 88, 3)
+
 
       }
 
