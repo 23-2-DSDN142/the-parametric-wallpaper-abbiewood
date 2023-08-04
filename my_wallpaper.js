@@ -38,11 +38,11 @@ function setup_wallpaper(pWallpaper) {
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 100;
   pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 100;
+  pWallpaper.grid_settings.row_offset  = 50;
 }
 
 function wallpaper_background() {
-  background("#fadce3"); //light pink colour
+  background("#1C2A4A"); //light pink colour
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
@@ -53,13 +53,15 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 
     if(complexFlowerMode){
     //added petals
-    fill ("#9e1b42")
+    fill ("#F0A9A2")
      circle (petalX,petalY-39, outsidePetalSize) //top left
      circle (petalX+ 37, petalY, outsidePetalSize) // bottom right
      circle (petalX, petalY + 1, outsidePetalSize) // bottom left
      circle (petalX+37, petalY-38, outsidePetalSize); //top right
+     
     }
 
+    
      //petal outline
      fill (255)
      circle (outlineX, outlineY-20, outlineSize) //
@@ -68,6 +70,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
      circle (outlineX, outlineY+20, outlineSize);
 
     //main petals
+      fill ("#CCDCD0")
       circle (mainpetalX, mainpetalY-20, petalSize) //top petal
       circle (mainpetalX - 20, mainpetalY, petalSize) //left petal
       circle (mainpetalX + 20,mainpetalY, petalSize) //right petal
@@ -106,6 +109,8 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
       circle (detailX - 11, detailY - 2 , circleSize)
       circle (detailX - 7 , detailY - 4, circleSize)
 
+      fill ("#F0A9A2")
+    
        //top left cluster
       circle (6, 7, 4)
       circle (20, 10, 2)
@@ -129,6 +134,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 
 
       }
+
 
 
       }
