@@ -45,7 +45,7 @@ let softColourMode = true; // if statements changing colour
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution (NINE_PORTRAIT);
+  pWallpaper.resolution (FIT_TO_SCREEN);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings

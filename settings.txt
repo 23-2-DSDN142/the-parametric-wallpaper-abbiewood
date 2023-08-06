@@ -20,7 +20,7 @@ let centreColour = "#fff3d4"
 //centre circle details
 let detailX = 53
 let detailY = 40
-let circleSize = 5 //small circles around perimeter of centre
+let circleSize = 5 ;//small circles around perimeter of centre
 let circleDetailColour = "#DB652D"
 
 
