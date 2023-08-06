@@ -1,93 +1,108 @@
 //your parameter variables go here!
 
-//centre + details
+//centre
 let centreX = 50 // flower centre
-let centreY = 50 
-let centreSize = 50
+let centreY = 50
+let centreSize = 30
+let centreColour = "#fff3d4"
+
 
 //centre circle details
 let detailX = 53
 let detailY = 40
 let circleSize = 8 //small circles around perimeter of centre
+let circleDetailColour = "#DB652D"
+
 
 //main petals
-let petalSize = 37
+let petalSize = 35
 let mainpetalX = 50
 let mainpetalY = 50
+let mainPetalColour = "#CCDCD0"
+
 
 //outline around main petals
 let outlineSize = 40
 let outlineX = 50
 let outlineY = 50
+let outlineColour = "#821931"
+
 
 //outside extra petals
-let outsidePetalSize = 36
-let petalX = 32 
+let outsidePetalSize = 32
+let petalX = 32
 let petalY = 68
+let outsidePetalColour = "#F0A9A2"
 
-let complexFlowerMode = true;
+//pollen dots
+let pollenDotSize = 5
 
-let softColourMode = false;
+let backgroundColour = "#1C2A4A"
+
+
+let complexFlowerMode = true; //if statements changing flower
+let softColourMode = true; // if statements changing colour
+
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
   pWallpaper.resolution (NINE_PORTRAIT);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
+  pWallpaper.grid_settings.cell_width  = 200;
   pWallpaper.grid_settings.cell_height = 100;
   pWallpaper.grid_settings.row_offset  = 100;
 }
 
+
 function wallpaper_background() {
-  background("#CCDCD0"); //light pink colour
+  background(backgroundColour); //navy colour
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
 
     
     strokeWeight(0.5); //line weight
-    stroke ("#821931"); // colour of the line
+    stroke (outlineColour); // colour of the line
 
     if(complexFlowerMode){
-    //added petals
-    fill ("#1C2A4A")
+    //outside petals
+    fill (outsidePetalColour)
      circle (petalX,petalY-39, outsidePetalSize) //top left
      circle (petalX+ 37, petalY, outsidePetalSize) // bottom right
      circle (petalX, petalY + 1, outsidePetalSize) // bottom left
      circle (petalX+37, petalY-38, outsidePetalSize); //top right
      
     }
-
   
      //petal outline
      fill (255)
-     circle (outlineX, outlineY-20, outlineSize) //
+     circle (outlineX, outlineY-20, outlineSize) 
      circle (outlineX-20 , outlineY , outlineSize)
      circle (outlineX+20, outlineY, outlineSize)
      circle (outlineX, outlineY+20, outlineSize);
 
     //main petals
-      fill ("#F0A9A2")
+      fill (mainPetalColour)
       circle (mainpetalX, mainpetalY-20, petalSize) //top petal
       circle (mainpetalX - 20, mainpetalY, petalSize) //left petal
       circle (mainpetalX + 20,mainpetalY, petalSize) //right petal
       circle (mainpetalX, mainpetalY + 20, petalSize); //bottom petal
 
       //line details on petals
-      line (13, 50, 87 ,50) //
-      line (50, 87, 50, 13); //
+      line (13, 50, 87 ,50) 
+      line (50, 87, 50, 13);
 
 
      //centre
-      fill ("#fff3d4"); //yellow colour
+      fill (centreColour); //yellow colour
       circle (centreX, centreY, centreSize); //centre
 
 
       if(softColourMode){
 
       //detail in centre of flower
-      fill ("#DB652D") //light yellow
+      fill (circleDetailColour) // rusty yellow
       circle (detailX - 2, detailY - 4, circleSize) 
       circle (detailX + 3, detailY - 3, circleSize)
       circle (detailX + 7, detailY, circleSize)
@@ -107,33 +122,33 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
       circle (detailX - 11, detailY - 2 , circleSize)
       circle (detailX - 7 , detailY - 4, circleSize)
 
-      fill ("#fff3d4"); //pink colour
+      fill ("#FEF3D4"); // yellow colour
     
        //top left cluster
-      circle (6, 7, 5)
-      circle (20, 10, 7)
-      circle (10, 20, 3)
+      circle (6, 7, pollenDotSize)
+      circle (20, 10, pollenDotSize + 2)
+      circle (10, 20, pollenDotSize - 3)
 
        //bottom left cluster
-      circle (20, 90, 8)
-      circle (8, 86, 4)
-      circle (10, 70, 5)
+      circle (20, 90, pollenDotSize + 3)
+      circle (8, 86, pollenDotSize -1)
+      circle (10, 70, pollenDotSize)
 
       //top right cluster
-      circle (93, 20, 8)
-      circle (72, 10, 5)
-      circle (90, 8, 4)
+      circle (93, 20, pollenDotSize + 3)
+      circle (72, 10, pollenDotSize)
+      circle (90, 8, pollenDotSize - 1)
 
       //bottom right cluster
-      circle (87, 82, 6)
-      circle (92, 92, 5)
-      circle (75, 88, 4)
+      circle (87, 82, pollenDotSize + 1)
+      circle (92, 92, pollenDotSize)
+      circle (75, 88, pollenDotSize - 1)
 
       }
 
       else { 
 
-      fill ("#1C2A4A")
+      fill ("#1C2A4A") //this part changes the colour of the below to navy
       circle (detailX - 2, detailY - 4, circleSize) 
       circle (detailX + 3, detailY - 3, circleSize)
       circle (detailX + 7, detailY, circleSize)
@@ -154,28 +169,27 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
       circle (detailX - 7 , detailY - 4, circleSize)
 
 
-      fill ("#1C2A4A"); //pink colour
+      fill ("#1C2A4A"); //navy colour
     
-       //top left cluster
-      circle (6, 7, 4)
-      circle (20, 10, 2)
-      circle (10, 20, 3)
+     //top left cluster
+     circle (6, 7, pollenDotSize)
+     circle (20, 10, pollenDotSize + 2)
+     circle (10, 20, pollenDotSize - 3)
 
-       //bottom left cluster
-      circle (20, 90, 3)
-      circle (8, 86, 4)
-      circle (10, 70, 2)
+      //bottom left cluster
+     circle (20, 90, pollenDotSize + 3)
+     circle (8, 86, pollenDotSize -1)
+     circle (10, 70, pollenDotSize)
 
-      //top right cluster
-      circle (93, 20, 3)
-      circle (72, 10, 2)
-      circle (90, 8, 4)
+     //top right cluster
+     circle (93, 20, pollenDotSize + 3)
+     circle (72, 10, pollenDotSize)
+     circle (90, 8, pollenDotSize - 1)
 
-      //bottom right cluster
-      circle (87, 82, 4)
-      circle (92, 92, 2)
-      circle (75, 88, 3)
-
+     //bottom right cluster
+     circle (87, 82, pollenDotSize + 1)
+     circle (92, 92, pollenDotSize)
+     circle (75, 88, pollenDotSize - 1)
 
       }
 

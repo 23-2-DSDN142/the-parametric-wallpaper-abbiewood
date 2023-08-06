@@ -6,24 +6,60 @@ Your final settings.txt will look something like this when you are finished:
 
 /////////////////////////////////
 
-Wallpaper 1:
+Wallpaper 1
 
-//your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 20;
-let paramter1 = 10;
-let paramter2 = true;
-let paramter3 = 50; 
-let paramter4 = 0; 
-let paramter5 = 60;
+///your parameter variables go here!
+
+//centre
+let centreX = 50 // flower centre
+let centreY = 50
+let centreSize = 30
+let centreColour = "#fff3d4"
+
+
+//centre circle details
+let detailX = 53
+let detailY = 40
+let circleSize = 5 //small circles around perimeter of centre
+let circleDetailColour = "#DB652D"
+
+
+//main petals
+let petalSize = 45
+let mainpetalX = 50
+let mainpetalY = 50
+let mainPetalColour = 255
+
+
+//outline around main petals
+let outlineSize = 40
+let outlineX = 50
+let outlineY = 50
+let outlineColour = "#821931"
+
+
+//outside extra petals
+let outsidePetalSize = 30
+let petalX = 32
+let petalY = 68
+let outsidePetalColour = "#FEF3D4"
+
+//pollen dots
+let pollenDotSize = 2
+
+let backgroundColour = "#F0A9A2"
+
+
+let complexFlowerMode = true; //if statements changing flower
+let softColourMode = false; // if statements changing colour
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.resolution (NINE_PORTRAIT);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
+  pWallpaper.grid_settings.cell_width  = 200;
   pWallpaper.grid_settings.cell_height = 100;
   pWallpaper.grid_settings.row_offset  = 50;
 }
@@ -33,21 +69,470 @@ function setup_wallpaper(pWallpaper) {
 Wallpaper 2:
 
 //your parameter variables go here!
-let rect_width  = 10;
-let rect_height = 10;
-let paramter1 = 20;
-let paramter2 = false;
-let paramter3 = 50; 
-let paramter4 = 80; 
-let paramter5 = 30;
+
+//centre
+let centreX = 50 // flower centre
+let centreY = 50
+let centreSize = 30
+let centreColour = "#fff3d4"
+
+
+//centre circle details
+let detailX = 53
+let detailY = 40
+let circleSize = 8 //small circles around perimeter of centre
+let circleDetailColour = "#DB652D"
+
+
+//main petals
+let petalSize = 35
+let mainpetalX = 50
+let mainpetalY = 50
+let mainPetalColour = 255
+
+
+//outline around main petals
+let outlineSize = 40
+let outlineX = 50
+let outlineY = 50
+let outlineColour = "#821931"
+
+
+//outside extra petals
+let outsidePetalSize = 32
+let petalX = 32
+let petalY = 68
+let outsidePetalColour = "#FEF3D4"
+
+//pollen dots
+let pollenDotSize = 4
+
+let backgroundColour = "#F0A9A2"
+
+
+let complexFlowerMode = true; //if statements changing flower
+let softColourMode = true; // if statements changing colour
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.resolution (NINE_PORTRAIT);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 100;
   pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 0;
+  pWallpaper.grid_settings.row_offset  = 50;
+}
+
+
+
+/////////////
+
+Wallpaper 3
+
+//your parameter variables go here!
+
+//centre
+let centreX = 50 // flower centre
+let centreY = 50
+let centreSize = 30
+let centreColour = "#fff3d4"
+
+
+//centre circle details
+let detailX = 53
+let detailY = 40
+let circleSize = 6 //small circles around perimeter of centre
+let circleDetailColour = "#DB652D"
+
+
+//main petals
+let petalSize = 35
+let mainpetalX = 50
+let mainpetalY = 50
+let mainPetalColour = "#CCDCD0"
+
+
+//outline around main petals
+let outlineSize = 40
+let outlineX = 50
+let outlineY = 50
+let outlineColour = "#821931"
+
+
+//outside extra petals
+let outsidePetalSize = 32
+let petalX = 32
+let petalY = 68
+let outsidePetalColour = "#F0A9A2"
+
+//pollen dots
+let pollenDotSize = 4
+
+let backgroundColour = "#1C2A4A"
+
+
+let complexFlowerMode = true; //if statements changing flower
+let softColourMode = false; // if statements changing colour
+
+/////////
+
+Wallpaper 4
+
+//your parameter variables go here!
+
+//centre
+let centreX = 50 // flower centre
+let centreY = 50
+let centreSize = 50
+let centreColour = "#fff3d4"
+
+
+//centre circle details
+let detailX = 53
+let detailY = 40
+let circleSize = 5 //small circles around perimeter of centre
+let circleDetailColour = "#DB652D"
+
+
+//main petals
+let petalSize = 35
+let mainpetalX = 50
+let mainpetalY = 50
+let mainPetalColour = "#CCDCD0"
+
+
+//outline around main petals
+let outlineSize = 35
+let outlineX = 50
+let outlineY = 50
+let outlineColour = "#821931"
+
+
+//outside extra petals
+let outsidePetalSize = 30
+let petalX = 32
+let petalY = 68
+let outsidePetalColour = "#F0A9A2"
+
+//pollen dots
+let pollenDotSize = 3
+
+let backgroundColour = "#1C2A4A"
+
+
+let complexFlowerMode = false; //if statements changing flower
+let softColourMode = true; // if statements changing colour
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution (NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 100;
+  pWallpaper.grid_settings.cell_height = 100;
+  pWallpaper.grid_settings.row_offset  = 50;
+}
+
+
+////////////////////
+
+Wallpaper 5
+
+//your parameter variables go here!
+
+//centre
+let centreX = 50 // flower centre
+let centreY = 50
+let centreSize = 30
+let centreColour = "#fff3d4"
+
+
+//centre circle details
+let detailX = 53
+let detailY = 40
+let circleSize = 7 //small circles around perimeter of centre
+let circleDetailColour = "#DB652D"
+
+
+//main petals
+let petalSize = 35
+let mainpetalX = 50
+let mainpetalY = 50
+let mainPetalColour = "#CCDCD0"
+
+
+//outline around main petals
+let outlineSize = 40
+let outlineX = 50
+let outlineY = 50
+let outlineColour = "#821931"
+
+
+//outside extra petals
+let outsidePetalSize = 30
+let petalX = 32
+let petalY = 68
+let outsidePetalColour = "#F0A9A2"
+
+//pollen dots
+let pollenDotSize = 2
+
+let backgroundColour = "#FEF3D4"
+
+
+let complexFlowerMode = true; //if statements changing flower
+let softColourMode = false; // if statements changing colour
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution (NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 100;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 50;
+}
+
+/////////////
+
+Wallpaper 6
+
+//your parameter variables go here!
+
+//centre
+let centreX = 50 // flower centre
+let centreY = 50
+let centreSize = 30
+let centreColour = "#fff3d4"
+
+
+//centre circle details
+let detailX = 53
+let detailY = 40
+let circleSize = 7 //small circles around perimeter of centre
+let circleDetailColour = "#DB652D"
+
+
+//main petals
+let petalSize = 35
+let mainpetalX = 50
+let mainpetalY = 50
+let mainPetalColour = "#CCDCD0"
+
+
+//outline around main petals
+let outlineSize = 40
+let outlineX = 50
+let outlineY = 50
+let outlineColour = "#821931"
+
+
+//outside extra petals
+let outsidePetalSize = 30
+let petalX = 32
+let petalY = 68
+let outsidePetalColour = "#F0A9A2"
+
+//pollen dots
+let pollenDotSize = 5
+
+let backgroundColour = "#1C2A4A"
+
+
+let complexFlowerMode = false; //if statements changing flower
+let softColourMode = true; // if statements changing colour
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution (NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 100;
+  pWallpaper.grid_settings.row_offset  = 50;
+}
+
+////////////
+
+Wallpaper 7
+
+//your parameter variables go here!
+
+//centre
+let centreX = 50 // flower centre
+let centreY = 50
+let centreSize = 30
+let centreColour = "#fff3d4"
+
+
+//centre circle details
+let detailX = 53
+let detailY = 40
+let circleSize = 8 //small circles around perimeter of centre
+let circleDetailColour = "#DB652D"
+
+
+//main petals
+let petalSize = 35
+let mainpetalX = 50
+let mainpetalY = 50
+let mainPetalColour = "#CCDCD0"
+
+
+//outline around main petals
+let outlineSize = 40
+let outlineX = 50
+let outlineY = 50
+let outlineColour = "#821931"
+
+
+//outside extra petals
+let outsidePetalSize = 32
+let petalX = 32
+let petalY = 68
+let outsidePetalColour = "#F0A9A2"
+
+//pollen dots
+let pollenDotSize = 5
+
+let backgroundColour = "#1C2A4A"
+
+
+let complexFlowerMode = true; //if statements changing flower
+let softColourMode = true; // if statements changing colour
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution (NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 100;
+  pWallpaper.grid_settings.row_offset  = 100;
+}
+
+
+///////////////////
+
+Wallpaper 8
+
+//your parameter variables go here!
+
+//centre
+let centreX = 50 // flower centre
+let centreY = 50
+let centreSize = 40
+let centreColour = "#fff3d4"
+
+
+//centre circle details
+let detailX = 53
+let detailY = 40
+let circleSize = 8 //small circles around perimeter of centre
+let circleDetailColour = "#DB652D"
+
+
+//main petals
+let petalSize = 37
+let mainpetalX = 50
+let mainpetalY = 50
+let mainPetalColour = "#F0A9A2"
+
+
+//outline around main petals
+let outlineSize = 40
+let outlineX = 50
+let outlineY = 50
+let outlineColour = "#821931"
+
+
+//outside extra petals
+let outsidePetalSize = 35
+let petalX = 32
+let petalY = 68
+let outsidePetalColour = "#FEF3D4"
+
+//pollen dots
+let pollenDotSize = 3
+
+let backgroundColour = "#CCDCD0"
+
+
+let complexFlowerMode = true; //if statements changing flower
+let softColourMode = false; // if statements changing colour
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution (NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 100;
+  pWallpaper.grid_settings.row_offset  = 100;
+}
+
+///////////////////////
+
+Wallpaper 9
+
+//your parameter variables go here!
+
+//centre
+let centreX = 50 // flower centre
+let centreY = 50
+let centreSize = 50
+let centreColour = "#fff3d4"
+
+
+//centre circle details
+let detailX = 53
+let detailY = 40
+let circleSize = 8 //small circles around perimeter of centre
+let circleDetailColour = "#DB652D"
+
+
+//main petals
+let petalSize = 37
+let mainpetalX = 50
+let mainpetalY = 50
+let mainPetalColour = "#F0A9A2"
+
+
+//outline around main petals
+let outlineSize = 40
+let outlineX = 50
+let outlineY = 50
+let outlineColour = "#821931"
+
+
+//outside extra petals
+let outsidePetalSize = 35
+let petalX = 32
+let petalY = 68
+let outsidePetalColour = "#1C2A4A"
+
+//pollen dots
+let pollenDotSize = 3
+
+let backgroundColour = "#CCDCD0"
+
+
+let complexFlowerMode = true; //if statements changing flower
+let softColourMode = false; // if statements changing colour
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution (NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 100;
+  pWallpaper.grid_settings.cell_height = 100;
+  pWallpaper.grid_settings.row_offset  = 100;
 }
